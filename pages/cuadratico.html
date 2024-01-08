@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/index.css">
+    <link rel="stylesheet" href="../CSS/menu.css">
+    <title>Convertidor de Polinomios</title>
+    <link id="icon-page" rel="icon" type="image/png" href="../img/polynomial_icon.svg">
+</head>
+
+<body>
+    <div class="menu">
+        <button id="hamburger" onclick="menu()">
+            <img src="../img/menu_hamburger.svg" width="48px" height="48px">
+        </button>
+        <nav id="nav" hidden>
+            <h3>Style :</h3>
+            <button class="nav-button" id="darkmode-button" onclick="darkmode()">
+                <img src="../img/darkmode_white.svg" width="16px" height="16px">
+                Modo sombra
+            </button>
+            <button class="nav-button" id="businessmode-button" onclick="businessmode()">
+                Modo claro
+            </button>
+        </nav>
+    </div>
+
+    <div class="page" id="page">
+        <div class="bloc">
+            <div class="fixed-bloc">
+                <h2>f(x) = ax²+bx+c</h2>
+                <form id="form">
+                    <div>
+                        <label>a =</label>
+                        <input type="text" name="a" size="2" required>
+                    </div>
+                    <div>
+                        <label>b =</label>
+                        <input type="text" name="b" size="2" required>
+                    </div>
+                    <div>
+                        <label>c =</label>
+                        <input type="text" name="c" size="2" required>
+                    </div>
+                </form>
+                <br />
+                <button onclick="clic()">Calcular</button>
+            </div>
+            <div id=opened-bloc>
+                <p id="reponse" hidden>
+                    Forma polinómica: <span class='result' id="polynomial_field"></span><br>
+                    Forma canónica: <span class='result' id="canonical_field"></span><br>
+                    Forma factorizada: <span class='result' id="factorized_field"></span><br>
+                    Delta: <span class='result' id="delta_field"></span><br>
+                    Raíz n°1 : <span class='result' id="root1_field"></span><br>
+                    Raíz n°2 : <span class='result' id="root2_field"></span><br>
+                    Soluciones a la inecuación <span class="result" id="inequation_sign"></span> :
+                    <span class='result' id="inequation_solutions"></span><br>
+                </p>
+            </div>
+            <div id="graph">
+            </div>
+        </div>
+    </div>
+    <div id="overlay" onclick="menu()" hidden></div>
+</body>
+<footer>
+    <!-- Contenido del pie de página -->
+    <p>&copy; 2024 Convertidor de Polinomios</p>
+</footer>
+
+</html>
+<script src="../script/clic.js"></script>
+<script src="../script/zoom.js"></script>
+<script src="../script/courbe.js"></script>
+<script src="../script/menu.js"></script>

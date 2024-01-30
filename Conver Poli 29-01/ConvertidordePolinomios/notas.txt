@@ -1,0 +1,34 @@
+Bienvenidos al convertidor de polinomios, convierte los polinomios a forma canonica y forma factorizada. Tambien se puede obtener la forma Delta, Raiz y la soluciones a a la inecuación.
+
+Convertidor de Monomio
+Convertidor de Binomio
+Convertidor de Trinomio
+Convertidor de Polinomio cuadrático
+Convertidor de Polinomio cúbico
+Convertidor de Polinomio de grado superior
+
+
+f(x) = ax²
+f(x) = bx+c
+f(x) = x²+bx+c
+
+f(x) = axn+bxm
+
+imagen
+
+makereal.tldraw.com
+
+
+
+ Forme polynomiale
+Forma canonique
+Forme factorisée
+Delta
+Racine n°1
+Racine n°2
+Soluciones a la inecuación 
+
+
+Validar el ingreso de texto y espacios vacios en los campos de números, solo permitir números reales. 
+Validar el ingreso de valores numéricos muy alto, poner un límite hasta 1000
+

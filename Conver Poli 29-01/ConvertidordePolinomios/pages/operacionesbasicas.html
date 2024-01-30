@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/index.css">
+    <link rel="stylesheet" href="../CSS/menu.css">
+    <title>Convertidor de Polinomios</title>
+    <link id="icon-page" rel="icon" type="image/png" href="../img/polynomial_icon.svg">
+</head>
+
+<body>
+    <div class="menu">
+        <button id="hamburger" onclick="menu()">
+            <img src="../img/menu_hamburger.svg" width="48px" height="48px">
+        </button>
+        <nav id="nav" hidden>
+            <h3>Style :</h3>
+            <button class="nav-button" id="darkmode-button" onclick="darkmode()">
+                <img src="../img/darkmode_white.svg" width="16px" height="16px">
+                Modo sombra
+            </button>
+            <button class="nav-button" id="businessmode-button" onclick="businessmode()">
+                Modo claro
+            </button>
+        </nav>
+    </div>
+
+    <div class="page" id="page">
+        <div class="bloc">
+            <div class="fixed-bloc">
+                <h2>f(x) = ax²+bx+c</h2>
+                <form id="form">
+                    <div>
+                        <label>Polinomio 1:</label>
+                    </div>
+                    <div>
+                        <label>a =</label>
+                        <input type="text" name="a" size="2" required>
+                    </div>
+                    <div>
+                        <label>b =</label>
+                        <input type="text" name="b" size="2" required>
+                    </div>
+                    <div>
+                        <label>c =</label>
+                        <input type="text" name="c" size="2" required>
+                    </div>
+                </form>
+                <form id="form">
+                    <div>
+                        <label>Polinomio 2:</label>
+                    </div>
+                    <div>
+                        <label>a =</label>
+                        <input type="text" name="a" size="2" required>
+                    </div>
+                    <div>
+                        <label>b =</label>
+                        <input type="text" name="b" size="2" required>
+                    </div>
+                    <div>
+                        <label>c =</label>
+                        <input type="text" name="c" size="2" required>
+                    </div>
+                </form>
+                <br />
+                <button onclick="clic()">Calcular</button>
+            </div>
+            <div id=opened-bloc>
+                <p id="reponse" hidden>
+                    
+                </p>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div id="overlay" onclick="menu()" hidden></div>
+    <script src="../script/operacionesbasicas.js"></script>
+    <script src="../script/menu.js"></script>
+</body>
+<footer>
+    <!-- Contenido del pie de página -->
+    <p>&copy; 2024 Convertidor de Polinomios</p>
+</footer>
+</html>

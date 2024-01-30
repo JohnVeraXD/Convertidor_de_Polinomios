@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertidor de Polinomios</title>
+    <link rel="stylesheet" href="CSS/styleindex.css">
+    <link rel="stylesheet" href="CSS/menu.css">
+    <link id="icon-page" rel="icon" type="image/png" href="img/polynomial_icon.svg">
+</head>
+
+<body>
+    <div class="menu">
+        <button id="hamburger" onclick="menu()">
+            <img src="img/menu_hamburger.svg" width="48px" height="48px">
+        </button>
+        <nav id="nav" hidden>
+            <h3>Estilos :</h3>
+            <button class="nav-button" id="darkmode-button" onclick="darkmode()">
+                <img src="img/darkmode_white.svg" width="16px" height="16px">
+                Modo Oscuro
+            </button>
+            <button class="nav-button" id="businessmode-button" onclick="businessmode()">
+                Modo claro
+            </button>
+            <h3>Opciones: </h3>
+            <button class="nav-button" id="ss">
+                Mas Información
+            </button>
+        </nav>
+    </div>
+    
+    <div class="page">
+        <div class="titulo">
+            <h1 id="titulo">Convertidor de Polinomios</h1>
+            <div>
+                <p id="parrafo">Bienvenidos al convertidor de polinomios, convierte los polinomios a forma canónica y
+                    forma factorizada. También se puede obtener la forma Delta, la Raíz y la soluciones a la Inecuación.
+                </p>
+            </div>
+        </div>
+
+           <!-- Sección de Video de YouTube -->
+           <div class="youtube-video-container">
+            <h2>Tutorial de Ecuaciones Polinómicas</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/[ID_DEL_VIDEO]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+         </div>
+
+        <div class="center-container">
+
+            <div class="container">
+
+                <div class="box" onclick="location.href='pages/ecuacionLineal.html'">
+                    <div>
+                        <img src="img/EcuaciónLineal.png" alt="lineal">
+                    </div>
+                    <div>
+                        <h1>Ecuación lineal</h1>
+                    </div>
+                </div>
+
+                <div class="box" onclick="location.href='pages/ecuacionCuadratica.html'">
+                    <div>
+                        <img src="img/monomio.png" alt="lineal">
+                    </div>
+                    <div>
+                        <h1>Ecuación Cuadrática</h1>
+                    </div>
+                </div>
+                <div class="box" onclick="location.href='pages/ecuacionPolinomica.html'">
+                    <div>
+                        <img src="img/Binomio.png" alt="Binomio">
+                    </div>
+                    <div>
+                        <h1>Ecuación Polinómica</h1>
+                    </div>
+                </div>
+                <div class="box" onclick="location.href='pages/ecuaciontrinomio.html'">
+                    <div>
+                        <img src="img/Trinomio.png" alt="Trinomio">
+                    </div>
+                    <div>
+                        <h1>Ecuación Polinómica General</h1>
+                    </div>
+                </div>
+                <div class="box" onclick="location.href='pages/cuadratico.html'">
+                    <div>
+                        <img src="img/cuadrático.png" alt="Polinomio cuadrático">
+                    </div>
+                    <div>
+                        <h1>Polinomio cuadrático</h1>
+                    </div>
+                </div>
+                <div class="box" onclick="location.href='pages/ecuacionCubica.html'">
+                    <div>
+                        <img src="img/cúbico.png" alt="Polinomio cúbico">
+                    </div>
+                    <div>
+                        <h1>Polinomio cúbico</h1>
+                    </div>
+                </div>
+                <div class="box" onclick="location.href='pages/ecuaciongradosuperior.html'">
+                    <div>
+                        <img src="img/grado superior.png" alt="Polinomio de grado superior">
+                    </div>
+                    <div>
+                        <h1>Polinomio de grado superior</h1>
+                    </div>
+                </div>
+                <div class="box" onclick="location.href='pages/operacionesbasicas.html'">
+                    <div>
+                        <img src="" alt="Operaciones basicas">
+                    </div>
+                    <div>
+                        <h1>Operaciones básicas con polinomios cuadráticos</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="overlay" onclick="menu()" hidden></div>
+
+</body>
+<footer>
+    <!-- Contenido del pie de página -->
+    <p>&copy; 2024 Convertidor de Polinomios</p>
+</footer>
+
+</html>
+
+<script src="script/menu.js"></script>

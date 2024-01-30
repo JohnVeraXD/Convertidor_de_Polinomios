@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/ecuacionlineal.css">
+    <link rel="stylesheet" href="../CSS/menu.css">
+    <link id="icon-page" rel="icon" type="image/png" href="../img/polynomial_icon.svg">
+    <title>Ecuación Cuártica</title>
+</head>
+<body>
+    <div class="menu">
+        <button id="hamburger" onclick="menu()">
+            <img src="../img/menu_hamburger.svg" width="48px" height="48px">
+        </button>
+        <nav id="nav" hidden>
+            <h3>Estilo :</h3>
+            <button class="nav-button" id="darkmode-button" onclick="darkmode()">
+                <img src="../img/darkmode_white.svg" width="16px" height="16px">
+                Modo Oscuro
+            </button>
+            <button class="nav-button" id="businessmode-button" onclick="businessmode()">
+                Modo claro
+            </button>
+        </nav>
+    </div>
+    <div class="container">
+            <!-- Sección de Descripción -->
+            <div class="descripcion">
+
+                <!-- Sección de Descripción -->
+                <h2>Introducción a la Ecuación Cuártica</h2>
+                <p>La ecuación cuártica, expresada como y = ax⁴ + bx³ + cx² + dx + e, es una fórmula para definir curvas de cuarto grado en un plano. Estas ecuaciones representan una gama más amplia de comportamientos y formas en comparación con las ecuaciones lineales, cuadráticas y cúbicas, permitiendo modelar fenómenos más complejos y diversas formas de curvatura.</p>
+
+
+                <!-- Sección Cómo Funciona -->
+                <h2>Cómo Funciona</h2>
+                <p>Esta aplicación te permite visualizar gráficamente la ecuación cuártica. Simplemente ingresa los valores para 'a', 'b', 'c', 'd', y 'e' en los campos proporcionados y haz clic en "Calcular". Verás cómo la gráfica refleja la curva cuártica basada en los coeficientes que ingresaste. Utiliza las herramientas de zoom y arrastre para examinar la gráfica en detalle y comprender mejor cómo cada término afecta la forma de la curva.</p>
+                       
+                </div>
+        <h1>Ecuación Cuártica: y = ax⁴ + bx³ + cx² + dx + e</h1>
+        <form id="quarticForm">
+            <div>
+                <label for="a">a:</label>
+                <input type="number" id="a" name="a" required>
+           
+                <label for="b">b:</label>
+                <input type="number" id="b" name="b" required>
+          
+                <label for="c">c:</label>
+                <input type="number" id="c" name="c" required>
+          
+                <label for="d">d:</label>
+                <input type="number" id="d" name="d" required>
+            
+                <label for="e">e:</label>
+                <input type="number" id="e" name="e" required>
+            </div>
+            <button type="button" onclick="calcularEcuacionCuarta()">Calcular</button>
+        </form>
+        <div id="graficoLineal" style="width: 500px; height: 500px;">
+            <canvas id="graficoCanvas" width="500" height="500"></canvas>
+        </div>
+        <div class="zoom-controls">
+            <button onclick="zoomOut()">-</button>
+            <input type="number" id="zoomInput" value="1" min="0.1" step="0.1">
+            <button onclick="zoomIn()">+</button>
+            <br>
+            <button onclick="actualizarZoomManual()">Actualizar Zoom</button>
+            <br>
+            <span id="zoomLevel">Zoom: 1x</span>
+
+        </div>
+    </div>
+    <div id="overlay" onclick="menu()" hidden></div>
+   
+</body>
+</html>
+
+<script src="../script/ecuaciongradosuperior.js"></script>
+<script src="../script/menu.js"></script>
+<script src="../script/language.js"></script>

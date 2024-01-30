@@ -1,0 +1,16 @@
+{
+    "title": "Polynomial Converter",
+    "style": "Style:",
+    "darkMode": "Dark Mode",
+    "business": "Business",
+    "original": "Original",
+    "polynomialForm": "Polynomial Form:",
+    "canonicalForm": "Canonical Form:",
+    "factorizedForm": "Factorized Form:",
+    "delta": "Delta:",
+    "rootNumber1": "Root No.1:",
+    "rootNumber2": "Root No.2:",
+    "inequalitySolutions": "Inequality Solutions",
+    "calculate": "Calculate",
+    "copyright": "© 2023 Mathys"
+}

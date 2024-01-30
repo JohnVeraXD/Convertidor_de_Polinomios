@@ -1,0 +1,139 @@
+:root {
+    --couleur1: #c2c2c2 ;
+    --couleur2: #f1f1f1 ;
+    --couleur3: #2b2b2b;
+    --couleur4-1: #5f77ff ;
+    --couleur4-2: #8193f7 ;
+}
+
+html, body {
+    position: relative;
+    display: grid;
+    margin: 0;
+    height: 100%;
+    
+    background-color: var(--couleur2);
+    color: var(--couleur3);
+    font-family: 'Open Sans', 'Segoe UI', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+.descripcion {
+    margin: 20px 200px; /* Margen superior e inferior, y auto en los lados para centrar */
+    padding: 10px 30px; /* Padding de 10px en la parte superior e inferior, y 30px en los lados */
+    background-color: var(--couleur1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 80%; /* Ajusta esto según prefieras */
+}
+
+.descripcion h2 {
+    font-size: 1.5em;
+    color: var(--couleur4-1);
+}
+
+.descripcion p {
+    font-size: 1em;
+    text-align: justify;
+}
+
+
+
+form {
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+form div {
+    margin: 10px 0;
+    font-size: 20px;
+    padding: 5px 10px;
+}
+
+
+
+#graficoLineal {
+    width: 500px;
+    height: 500px;
+    margin: 20px auto;
+    border: 1px solid var(--couleur3);
+    /* Agrega aquí más estilos para tu gráfico */
+}
+
+button {
+    padding: 10px;
+    color: #f1f1f1;
+    font-family: 'Open Sans', 'Segoe UI', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    background-color: var(--couleur4-1);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 5px 3px 12px 5px rgba(0,0,0,0.4);
+    transform: none;
+    transition: transform 100ms linear;
+}
+
+button:hover {
+    background-color: var(--couleur4-2);
+    box-shadow: 5px 3px 12px 5px rgba(0,0,0,0.1);
+    transform: scale3d(1.05, 1.05, 1.05);
+}
+
+input {
+    padding: 3px;
+    color: #283618;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 4px;
+    border-width: 0px;
+}
+
+.page {
+    display: flex;
+    justify-content: center;
+}
+
+.bloc {
+    text-align: center;
+    background-color: var(--couleur1);
+    line-height: 200%;
+    width: 50%;
+    height: min-content;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 3px 12px 5px rgba(0, 0, 0, 0.3);
+}
+
+#form {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.fixed-bloc {
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.fixed-bloc > h2 {
+    font-size: 25px;
+}
+#form > div {
+    padding: 5px 10px;
+}
+
+footer {
+    background-color: var(--couleur1); /* Color de fondo del pie de página */
+    color: var(--couleur3); /* Color de texto en el pie de página */
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+}
+
+
+

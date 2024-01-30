@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/ecuacionlineal.css">
+    <link rel="stylesheet" href="../CSS/menu.css">
+    <link id="icon-page" rel="icon" type="image/png" href="../img/polynomial_icon.svg">
+    <title>Ecuación Polinómica</title>
+</head>
+<body onload="calcularEcuacionPolinomica()"> <!-- Llamada inicial al cargar la página -->
+    <div class="menu">
+        <button id="hamburger" onclick="menu()">
+            <img src="../img/menu_hamburger.svg" width="48px" height="48px">
+        </button>
+        <nav id="nav" hidden>
+            <h3>Estilo :</h3>
+            <button class="nav-button" id="darkmode-button" onclick="darkmode()">
+                <img src="../img/darkmode_white.svg" width="16px" height="16px">
+                Modo Oscuro
+            </button>
+            <button class="nav-button" id="businessmode-button" onclick="businessmode()">
+                Modo claro
+            </button>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="descripcion">
+            <h2>Introducción a la Ecuación Polinómica</h2>
+            <p>La ecuación polinómica de la forma y = ax^n + bx^n representa una función polinómica donde 'n' es el grado del polinomio y 'a' y 'b' son coeficientes. Estas ecuaciones pueden formar una variedad de curvas en el plano, dependiendo de los valores de 'a', 'b' y 'n'.</p>
+
+            <h2>Cómo Funciona</h2>
+            <p>Para graficar una ecuación polinómica, introduce los valores de 'a', 'b' y 'n' en los campos correspondientes y haz clic en "Calcular". La gráfica mostrará cómo se ve la ecuación en el plano cartesiano. Puedes ajustar el nivel de zoom y arrastrar el gráfico para explorar distintas áreas y comprender mejor el comportamiento del polinomio.</p>
+        </div>
+
+        <h1>Ecuación Polinómica: y = ax^n + bx^n</h1>
+        <form id="polinomicaForm">
+            <div>
+                <label for="a">a: </label>
+                <input type="number" id="a" name="a" value="1" required oninput="calcularEcuacionPolinomica()"> <!-- Evento oninput agregado -->
+            </div>
+            <div>
+                <label for="b">b: </label>
+                <input type="number" id="b" name="b" value="0" required oninput="calcularEcuacionPolinomica()"> <!-- Evento oninput agregado -->
+            </div>
+            <div>
+                <label for="n">n (exponente): </label>
+                <input type="number" id="n" name="n" value="2" required oninput="calcularEcuacionPolinomica()"> <!-- Evento oninput agregado -->
+            </div>
+            <!-- Botón Calcular ya no es necesario -->
+        </form>
+        <div id="graficoLineal" style="width: 500px; height: 500px;">
+            <canvas id="graficoCanvas" width="500" height="500"></canvas>
+        </div>
+        <div class="zoom-controls">
+            <button onclick="zoomOutPolinomica()">-</button>
+            <input type="number" id="zoomInputPolinomica" value="1" min="0.1" step="0.1">
+            <button onclick="zoomInPolinomica()">+</button><br>
+            <button onclick="actualizarZoomManualPolinomica()">Actualizar Zoom</button>
+            <br>
+            <span id="zoomLevelPolinomica">Zoom: 1x</span>
+        </div>
+    </div>
+    <div id="overlay" onclick="menu()" hidden></div>
+</body>
+<footer>
+    <p>&copy; 2024 Convertidor de Polinomios</p>
+</footer>
+<script src="../script/ecuacionPolinomica.js"></script>
+<script src="../script/menu.js"></script>
+</html>

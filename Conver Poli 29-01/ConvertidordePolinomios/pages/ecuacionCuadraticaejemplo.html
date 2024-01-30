@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/ecuacionlineal.css">
+    <link rel="stylesheet" href="../CSS/menu.css">
+    <link id="icon-page" rel="icon" type="image/png" href="../img/polynomial_icon.svg">
+    <title>Ecuación Cuadrática</title>
+</head>
+<body onload="calcularEcuacionCuadratica()"> <!-- Llamada inicial al cargar la página -->
+    <div class="menu">
+        <button id="hamburger" onclick="menu()">
+            <img src="../img/menu_hamburger.svg" width="48px" height="48px">
+        </button>
+        <nav id="nav" hidden>
+            <h3>Estilo :</h3>
+            <button class="nav-button" id="darkmode-button" onclick="darkmode()">
+                <img src="../img/darkmode_white.svg" width="16px" height="16px">
+                Modo Oscuro
+            </button>
+            <button class="nav-button" id="businessmode-button" onclick="businessmode()">
+                Modo claro
+            </button>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="descripcion">
+            <h2>Introducción a la Ecuación Cuadrática</h2>
+            <p>La ecuación cuadrática de la forma y = ax² es una de las ecuaciones más fundamentales en el álgebra. Representa una parábola en el plano cartesiano, donde 'a' determina la apertura y dirección de la parábola. Esta herramienta te permite visualizar la gráfica de la ecuación cuadrática y entender su comportamiento.</p>
+
+            <h2>Cómo Funciona</h2>
+            <p>Esta aplicación permite graficar ecuaciones cuadráticas de la forma y = ax². Simplemente introduce el valor de 'a' en el campo correspondiente y presiona "Calcular". El gráfico se actualizará automáticamente para reflejar la ecuación proporcionada. Utiliza las herramientas de zoom y arrastre para explorar diferentes partes del gráfico y entender mejor la forma de la parábola.</p>
+        </div>
+
+        <h1>Ecuación Cuadrática: y = ax²</h1>
+        <form id="linearForm">
+            <div>
+                <label for="a">a:</label>
+                <input type="number" id="a" name="a" value="1" required oninput="calcularEcuacionCuadratica()">
+            </div>
+        </form>
+        <div id="graficoLineal" style="width: 500px; height: 500px;">
+            <canvas id="graficoCuadraticoCanvas" width="500" height="500"></canvas>
+        </div>
+        <div class="zoom-controls">
+            <button onclick="zoomOutCuadratica()">-</button>
+            <input type="number" id="zoomInputCuadratica" value="1" min="0.1" step="0.1">
+            <button onclick="zoomInCuadratica()">+</button><br>
+            <button onclick="actualizarZoomManualCuadratica()">Actualizar Zoom</button>
+            <br>
+            <span id="zoomLevelCuadratica">Zoom: 1x</span>
+        </div>
+    </div>
+    <div id="overlay" onclick="menu()" hidden></div>
+</body>
+<footer>
+    <p>&copy; 2024 Convertidor de Polinomios</p>
+</footer>
+<script src="../script/ecuacionCuadratica.js"></script>
+<script src="../script/menu.js"></script>
+</html>

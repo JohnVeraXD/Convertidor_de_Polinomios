@@ -1,0 +1,17 @@
+{
+    "title": "Conversor de Polinomios",
+    "style": "Estilo",
+    "darkMode": "Modo Oscuro",
+    "business": "Negocios",
+    "original": "Original",
+    "polynomialForm": "Forma polinómica",
+    "canonicalForm": "Forma canónica",
+    "factorizedForm": "Forma factorizada",
+    "delta": "Delta",
+    "rootNumber1": "Raíz nº1",
+    "rootNumber2": "Raíz nº2",
+    "inequalitySolutions": "Soluciones de la inecuación",
+    "calculate": "Calcular",
+    "copyright": "© 2023 Mathys"
+    
+}
